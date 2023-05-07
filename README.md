@@ -7,3 +7,4 @@ Veebisaidi esiotsa kood on avatud lähtekoodiga, teretulnud aitama tõlget optim
 * [esiotsa kood](https://github.com/xxai-art/web)
 * [Keelepaketid saidi kui terviku jaoks](https://github.com/xxai-art/web/tree/main/i18n)
 * [Sisselogimismoodulite keelepaketid](https://github.com/wacpkg/user/tree/main/ui.i18n)
+* [Veebisaidi mitmekeelne dokumentatsioon](https://github.com/xxai-doc)
