@@ -2,13 +2,13 @@
 
 [@w5/coffee_plus](http://npmjs.com/@w5/coffee_plus) , lisage mõned funktsioonid coffeescripti süntaksi alusel, vt [coffee_plus](./coffee_plus.md) .
 
-* deklareerida muutuja
+## deklareerida muutuja
 
 ```
 + var1, var2
 ```
 
-* deklaratsiooni silt
+## deklaratsiooni silt
 
 `:$` on mõeldud kasutamiseks koos [svelte'iga](https://svelte.dev/docs#component-format-script-3-$-marks-a-statement-as-reactive) .
 
@@ -90,7 +90,7 @@ $ : (func = function() {
 });
 ```
 
-* kiire import
+## kiire import
 
 ```
 > zx/globals:
