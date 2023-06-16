@@ -1,10 +1,10 @@
 <p align="center"><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/logo.svg"/></a><br/><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/xxai.svg"/></a></p><p align="center"><a href="https://github.com/xxai-art/doc#readme"><img alt="I18N" src="https://cdn.jsdelivr.net/gh/wactax/img/t.svg"/></a>　<a href="https://groups.google.com/u/0/g/xxai-art"><img alt="Google Groups" src="https://cdn.jsdelivr.net/gh/wactax/img/g-groups.svg"/></a></p>
 
-# xxAI.art
+Soovitatav on pärast kataloogi sisenemist esmalt installida nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) ja seejärel `direnv allow` ( [.envrc](https://github.com/xxai-art/doc/blob/main/.envrc) käivitatakse automaatselt pärast kataloogi sisenemist).
 
-Osa veebisaidi koodist on avatud lähtekoodiga, teretulnud aitama tõlget optimeerida.
+Tähendus on: hiina tõlge jaapani, korea, inglise keelde, ingliskeelne tõlge kõikidesse teistesse keeltesse. Kui soovite toetada ainult hiina ja inglise keelt, võite lihtsalt kirjutada `zh: en` .
 
-## esiotsa kood
+Tähendus on: hiina tõlge jaapani, korea, inglise keelde, ingliskeelne tõlge kõikidesse teistesse keeltesse. Kui soovite toetada ainult hiina ja inglise keelt, võite lihtsalt kirjutada `zh: en` .
 
 * [esiotsa kood](https://github.com/xxai-art/web)
 * [Keelepaketid saidi kui terviku jaoks](https://github.com/xxai-art/web/tree/main/i18n)
@@ -31,15 +31,15 @@ Toetuge järgmisele kolmele projektile
 
 ### Dokumentide tõlkimise automatiseerimise juhised
 
-Vaadake hoidlat [xxai-art/doc](https://github.com/xxai-art/doc)
+Vaadake koodihoidlat [xxai-art/doc](https://github.com/xxai-art/doc)
 
-Soovitatav on kõigepealt installida nodejs, [direnv](https://direnv.net) ja [bun](https://github.com/oven-sh/bun) ning seejärel käivitada `direnv allow` pärast kataloogi sisenemist.
+Soovitatav on pärast kataloogi sisenemist esmalt installida nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) ja seejärel `direnv allow` ( [.envrc](https://github.com/xxai-art/doc/blob/main/.envrc) käivitatakse automaatselt pärast kataloogi sisenemist).
 
-Et vältida liiga suuri ladusid sadadesse keeltesse tõlgituna, lõin iga keele jaoks eraldi koodilao ja selle lao hoidmiseks organisatsiooni
+Et vältida suurt koodibaasi tõlgimist sadadesse keeltesse, lõin iga keele jaoks eraldi koodibaasi ja lõin organisatsiooni koodibaasi salvestamiseks
 
-Keskkonnamuutuja `GITHUB_ACCESS_TOKEN` määramine ja faili [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) käivitamine loob ladu automaatselt.
+Keskkonnamuutuja `GITHUB_ACCESS_TOKEN` määramisel ja seejärel [faili create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) käivitamisel luuakse automaatselt koodihoidla.
 
-Muidugi saab ka lattu panna.
+Muidugi saab selle panna ka koodibaasi.
 
 Tõlkeskripti viide [run.sh](https://github.com/xxai-art/doc/blob/main/run.sh)
 
@@ -71,4 +71,8 @@ Tasuta tõlkimiseks kasutatakse Google API-t. Kui te ei pääse Google'ile juurd
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 ```
 
-Tõlkeskript loob tõlkevahemälu `.i18n` kataloogis, kontrollige seda `git status` ja lisage see koodihoidlasse, et vältida korduvaid tõlkeid.
+Tõlkeskript loob tõlgitud vahemälu `.i18n` kataloogis. Kontrollige seda `git status` ja lisage see koodihoidlasse, et vältida korduvaid tõlkeid.
+
+Käivitage `bunx i18n` iga kord, kui muudate vahemälu värskendamiseks tõlget.
+
+Kui originaalteksti ja tõlget muudetakse samal ajal, läheb vahemälu segamini, nii et kui soovite muuta, saate muuta ainult ühte ja seejärel käivitada vahemälu värskendamiseks `bunx i18n` .
