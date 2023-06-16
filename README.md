@@ -17,14 +17,14 @@ Esiotsa programmeerimiskeel on [@w5/coffee_plus](http://npmjs.com/@w5/coffee_plu
 
 Toetuge järgmisele kolmele projektile
 
-### [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
+* [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
 
-Mõõtmismall järelliitega `.mdt` võib viidata välistele failidele, mille süntaks sarnaneb failiga `<+ ./coffee_plus/import.js>` .
+  Järelliide on `.mdt` , saate kasutada süntaksit, mis sarnaneb süntaksiga `<+ ./coffee_plus/import.js>` , et viidata välistele failidele ja genereerida allahindlust järelliitega `.md` .
 
-[@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
+* [@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
 
-Markdown-tõlge ei tõlgi koode ega linke ning salvestab tõlgitud laused vahemällu. Kui tõlget muudetakse, kuid originaalteksti ei muudeta, ei kirjuta selle uuesti täitmine tõlke muudatust üle.
+  Markdown-tõlge ei tõlgi koode ega linke ning salvestab tõlgitud laused vahemällu. Kui tõlget muudetakse, kuid originaalteksti ei muudeta, ei kirjuta selle uuesti täitmine tõlke muudatust üle.
 
-[@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
+* [@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
 
-Keelefailid `yaml` loodud veebisaitide tõlkimiseks.
+  Keelefailid `yaml` loodud veebisaitide tõlkimiseks.
